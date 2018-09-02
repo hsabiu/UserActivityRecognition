@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group 'com.habib.wekaserver'
+version '1.0-SNAPSHOT'
+
+mainClassName = "com.habib.wekaserver.Server"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'nz.ac.waikato.cms.weka', name: 'weka-stable', version: '3.8.0'
+}

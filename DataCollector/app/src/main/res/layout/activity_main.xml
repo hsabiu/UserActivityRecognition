@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dip"
+        android:text="Sensor Data"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Accel X-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Accel Y-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Accel Z-Axis"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/accel_x_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/accel_y_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/accel_z_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gyro X-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gyro Y-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gyro Z-Axis"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gyro_x_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/gyro_y_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/gyro_z_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mag X-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mag Y-Axis"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mag Z-Axis"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mag_x_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mag_y_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mag_z_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="OnSever Start"
+            android:id="@+id/btnOnServerStart"
+            android:layout_gravity="left"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="OnSever Stop"
+            android:id="@+id/btnOnServerStop"
+            android:layout_gravity="left"
+            android:layout_weight="0.08" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="OnClient Start"
+            android:id="@+id/btnOnClientStart"
+            android:layout_gravity="left"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="OnClient Stop"
+            android:id="@+id/btnOnClientStop"
+            android:layout_gravity="left"
+            android:layout_weight="0.08" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:paddingLeft="25dp"
+            android:textSize="20dp"
+            android:text="Server status:"
+            android:id="@+id/tvConnection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:paddingLeft="10dp"
+            android:textColor="#ff0000"
+            android:text="DISCONNECTED"
+            android:textSize="20dp"
+            android:id="@+id/tvConnectionStatus" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvPredictedClass"
+        android:paddingTop="10dp"
+        android:textSize="40dp"
+        android:textColor="#990000"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Time:  "
+            android:id="@+id/tvTime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tvTimeDisplay" />
+    </LinearLayout>
+
+</LinearLayout>
